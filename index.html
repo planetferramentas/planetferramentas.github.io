@@ -12,25 +12,11 @@
       name="keywords"
       content="ferramentas, atendimento, assistência técnica, manuais, roçadeira, motosserra, elétrica, gasolina"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="18x18"
-      href="assets/18x18.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/32x32.png" />
+    <link rel="icon" type="image/png" sizes="18x18" href="assets/18x18.png" />
 
     <!-- Para Apple (iOS / macOS) -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/180x180.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/180x180.png" />
     <meta name="author" content="@malkavianson & @thataleroy" />
     <style>
       body {
@@ -181,6 +167,9 @@
           /* sombra externa difusa */ inset 0 4px 10px rgba(255, 255, 255, 0.3),
           /* brilho interno */ inset 0 -4px 10px rgba(0, 0, 0, 0.15); /* sombra interna suave */
         transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       .btn:hover {
@@ -218,6 +207,7 @@
         display: flex;
         flex-direction: column;
         width: 50%;
+        align-items: center;
       }
       .about_text {
         align-items: center;
@@ -240,6 +230,13 @@
         background-repeat: no-repeat;
         background-size: contain;
         border-radius: 2rem;
+      }
+      .links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-weight: 600;
       }
       .footer {
         position: fixed;
@@ -276,18 +273,34 @@
         <section class="logo"></section>
         <section class="title-box">
           <div class="title_box_logo"></div>
-          <button class="btn" onclick="window.location.href='#'">
-            Serviço de Atendimento e Assistência Técnica
-          </button>
-          <button class="btn" onclick="window.location.href='#'">
-            Manual Roçadeira a Gasolina
-          </button>
-          <button class="btn" onclick="window.location.href='#'">
-            Manual Motosserra a Gasolina
-          </button>
-          <button class="btn" onclick="window.location.href='#'">
-            Manual Motosserra Elétrica
-          </button>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5531992045455"
+            target="_blank"
+            class="links"
+          >
+            <div class="btn">Serviço de Atendimento e Assistência Técnica</div>
+          </a>
+          <a
+            href="https://1drv.ms/b/c/f5a5c3ff364f4b6e/EaGo2S43OcdDg84q-9OVo7MBWqYy5fLes5exRo-ELMr6vg?e=HEG2Pk"
+            target="_blank"
+            class="links"
+          >
+            <div class="btn">Manual Roçadeira a Gasolina</div>
+          </a>
+          <a
+            href="https://1drv.ms/b/c/f5a5c3ff364f4b6e/Efkr_krWRihFntyV5P7wKM4B5Mng5jZ83EcswHIDKuNLqw?e=YHpzZP"
+            target="_blank"
+            class="links"
+          >
+            <div class="btn">Manual Motosserra a Gasolina</div>
+          </a>
+          <a
+            href="https://1drv.ms/b/c/f5a5c3ff364f4b6e/EWJc9gVpYJ1BpaGFDwpsIIcBucbyLTdLuhHpGycm41Rr_A?e=pt6Lzr"
+            target="_blank"
+            class="links"
+          >
+            <div class="btn">Manual Motosserra Elétrica</div>
+          </a>
           <div class="social-icons">
             <a
               href="https://instagram.com/planet.ferramentas"
@@ -301,7 +314,10 @@
               aria-label="YouTube"
               ><img src="assets/Youtube_logo.png" alt="YouTube"
             /></a>
-            <a href="https://br.shp.ee/X5R7KpU" target="_blank" aria-label="Shopee"
+            <a
+              href="https://br.shp.ee/X5R7KpU"
+              target="_blank"
+              aria-label="Shopee"
               ><img src="assets/Shopee_logo.png" alt="Shopee"
             /></a>
             <a
@@ -333,7 +349,23 @@
       </main>
 
       <footer class="footer">
-        <div class="created">Created and Designed with ❤ by <a class="footer_links" href="https://github.com/malkavianson" target="_blank">@malkavianson</a> & <a class="footer_links" href="https://www.instagram.com/thataleroy" target="_blank"> @thataleroy </a></div>
+        <div class="created">
+          Created and Designed with ❤ by
+          <a
+            class="footer_links"
+            href="https://github.com/malkavianson"
+            target="_blank"
+            >@malkavianson</a
+          >
+          &
+          <a
+            class="footer_links"
+            href="https://www.instagram.com/thataleroy"
+            target="_blank"
+          >
+            @thataleroy
+          </a>
+        </div>
         <div class="localização">BH - MG / 2025</div>
       </footer>
     </div>
