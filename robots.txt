@@ -1,0 +1,7 @@
+# Permite que todos os robôs indexem o site
+User-agent: *
+Disallow: /assets/
+Allow: /
+
+# Sitemap
+Sitemap: https://planetferramentas.com.br/sitemap.xml
