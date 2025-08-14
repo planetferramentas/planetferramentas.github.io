@@ -4,4 +4,4 @@ Disallow: /assets/
 Allow: /
 
 # Sitemap
-Sitemap: https://planetferramentas.com.br/sitemap.xml
+Sitemap: https://www.planetferramentas.com.br/sitemap.xml
